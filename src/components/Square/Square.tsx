@@ -11,15 +11,34 @@ const squareStyle = {
   fontSize: '20px',
   color: 'white',
 };
-const Square = ({ id }: { id?: number | undefined }) => {
-  const handleClick = (id: number | undefined) => {
-    console.log('click', id);
+
+const disabledSquareStyle = {
+  backgroundColor: '#ccc',
+  cursor: 'not-allowed',
+};
+
+const Square = ({
+  nextPlayer,
+  value,
+}: {
+  nextPlayer: () => void;
+  value: string | null;
+}) => {
+  const handleClick = (e: {
+    preventDefault: () => void;
+    stopPropagation: () => void;
+  }) => {
+    e.preventDefault();
+    if (value) return;
+    nextPlayer();
   };
   return (
     <div
       className="square"
-      style={squareStyle}
-      onClick={() => handleClick(id)}></div>
+      style={value ? { ...squareStyle, ...disabledSquareStyle } : squareStyle}
+      onClick={handleClick}>
+      {value}
+    </div>
   );
 };
 
