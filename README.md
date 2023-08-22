@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Tic-Tac-Toe in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This Tic-Tac-Toe app is a fun and interactive game that allows two players to play the classic game of Tic-Tac-Toe. The
+application is built using React and leverages the React Context API for state management. This project is ideal for
+those looking to get hands-on practice with React and state management patterns.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- A 3x3 game board where players can mark their symbols.
+- Player turns automatically alternate between 'X' and 'O'.
+- The app detects a win or a tie and displays an appropriate message.
+- Game state is managed using React Context API.
+- Clean and intuitive UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have Node.js and npm installed on your machine. If not, you can download and install them from the
+official [Node.js website](https://nodejs.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone the Repository
 
-### `npm run build`
+```bash
+git clone https://github.com/bewpage/tic-tac-toe-react.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Navigate to project directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd tic-tac-toe-react
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Dependencies
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How to Run
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After installing the dependencies, you can run the app using:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will start the development server, and the app should automatically open in your default web browser. If it
+doesn't, navigate to [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [React Context API](https://reactjs.org/docs/context.html) - React's in-built state management feature.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Purpose
+
+This project serves as a great practice ground for those looking to understand React and the React Context API better.
+Whether you're a beginner in React or looking to solidify your understanding of context and state management, this
+project has something to offer you.
+
+## Contributing
+
+Feel free to fork this repository, make changes, and submit pull requests. Any kind of contributions are welcome!
